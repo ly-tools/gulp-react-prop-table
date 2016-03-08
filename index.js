@@ -9,7 +9,6 @@ const path = require('path');
 const DEFAULT_OPTS = {
   template: '# <%= path %>\n\n<%= contents %>'
 };
-
 module.exports = opts => {
   opts = _.defaults(opts || {}, DEFAULT_OPTS);
   return through.obj((file, encoding, callback) => {
