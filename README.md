@@ -35,6 +35,44 @@ gulp.task('demo', function() {
 
 ## Options
 
+
+### template
+
+String, Default `'# <%= path %>\n\n<%= contents %>'`
+
+String template of documentation, `path` will be path of the file and `contents` will be the markdown result
+
+### headers
+
+Configuration of the header
+
+* config.headers:Array(Object) => Headers config
+  * header.name:String => key in data object
+  * header.align:String => text align of the column
+  * header.title:String => title of the column
+
+Default:
+
+```
+[{
+  name: 'name',
+  align: ':---'
+}, {
+  name: 'description',
+  align: ':-----'
+}, {
+  name: 'type',
+  align: ':---'
+}, {
+  name: 'required',
+  align: ':---:'
+}, {
+  name: 'defaultValue',
+  align: ':---:',
+  title: 'Default Value'
+}]
+```
+
 ## Test
 
 ```bash
