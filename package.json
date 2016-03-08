@@ -1,0 +1,37 @@
+{
+  "name": "gulp-react-prop-table",
+  "version": "1.0.0",
+  "description": "A gulp plugin use react-prop-table to generate documentation for React project",
+  "main": "index.js",
+  "scripts": {
+    "test": "NODE_ENV=test ./node_modules/.bin/_mocha --require should --reporter spec",
+    "test-cov": "NODE_ENV=test node ./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- --require should",
+    "test-travis": "NODE_ENV=test node ./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha --report lcovonly -- --require should"
+  },
+  "author": "ly-tools",
+  "license": "MIT",
+  "devDependencies": {
+    "del": "^1.1.0",
+    "gulp": "3.x.x",
+    "istanbul": "~0.4.0",
+    "mocha": "~2.3.3",
+    "pretty-error": "~2.0.0",
+    "run-gulp-task": "^0.1.1",
+    "should": "^8.1.0"
+  },
+  "dependencies": {
+    "gulp-util": "~3.0.7",
+    "linglog": "0.0.4",
+    "lodash": "~3.10.1",
+    "react-prop-table": "~0.1.0",
+    "through2": "~0.4.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ly-tools/gulp-react-prop-table"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/ly-tools/gulp-react-prop-table/issues"
+  }
+}
