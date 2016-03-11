@@ -17,7 +17,9 @@
     "mocha": "~2.3.3",
     "pretty-error": "~2.0.0",
     "run-gulp-task": "^0.1.1",
-    "should": "^8.1.0"
+    "should": "^8.1.0",
+    "vinyl": "^1.1.1",
+    "vinyl-fs": "~2.4.2"
   },
   "dependencies": {
     "gulp-util": "~3.0.7",

@@ -4,11 +4,14 @@ const _ = require('lodash');
 const through = require('through2');
 const Docer = require('react-prop-table');
 const PluginError = require('gulp-util').PluginError;
-const logger = require('linglog')('gulp-react-prop-table');
+const logger = require('linglog')('gulp-react-prop-table', {
+  timeFormat: 'HH:mm:ss'
+});
 const path = require('path');
 const DEFAULT_OPTS = {
   template: '# <%= path %>\n\n<%= contents %>'
 };
+
 module.exports = opts => {
   opts = _.defaults(opts || {}, DEFAULT_OPTS);
   return through.obj((file, encoding, callback) => {
