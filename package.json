@@ -35,5 +35,8 @@
   "keywords": [],
   "bugs": {
     "url": "https://github.com/ly-tools/gulp-react-prop-table/issues"
+  },
+  "publishConfig": {
+    "registry": "http://registry.npmjs.org/"
   }
 }
