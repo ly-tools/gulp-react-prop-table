@@ -54,14 +54,5 @@ describe('gulp-react-prop-table', function() {
           done();
         });
     });
-    it('should throw when syntax error', done => {
-      vfs.src(path.join(__dirname, 'case', 'src', 'index.less'))
-        .pipe(reactPropTable())
-        .on('error', e => {
-          e.message.should.be.eql('Unexpected token (1:0)');
-          e.should.be.instanceOf(PluginError);
-          done();
-        });
-    });
   });
 });

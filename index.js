@@ -28,8 +28,8 @@ module.exports = opts => {
       file.path = file.path.replace(path.extname(file.path), '.md');
       callback(null, file);
     } catch (e) {
-      logger.error(e.message);
-      callback(new PluginError('gulp-react-prop-table', e));
+      logger.warn(`Fail on file ${file.path}: ${e.message}`);
+      callback(null);
     }
   });
 };

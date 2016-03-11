@@ -6,7 +6,7 @@ const del = require('del');
 gulp.task('clean', cb => del('build', cb));
 
 gulp.task('default', ['clean'], () => {
-  return gulp.src('src/**/*.jsx')
+  return gulp.src('src/**/*')
     .pipe(plugin({}))
     .pipe(gulp.dest('build'));
 });
