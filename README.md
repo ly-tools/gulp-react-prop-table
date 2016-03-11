@@ -20,6 +20,20 @@ $ npm install --save-dev gulp-react-prop-table
 
 ## Usage
 
+```
+.
+├── doc
+│   ├── group.md
+│   ├── index.md
+│   └── option.md
+├── gulpfile.js
+└── src
+    ├── group.jsx
+    ├── index.jsx
+    └── option.jsx
+```
+
+
 ```javascript
 var gulp = require('gulp');
 var plugin = require('gulp-react-prop-table');
@@ -29,7 +43,7 @@ gulp.task('demo', function() {
     .pipe(plugin({
       // your options
     }))
-    .pipe(gulp.dest('build'));
+    .pipe(gulp.dest('doc'));
 });
 ```
 
